@@ -47,6 +47,6 @@ public class App {
         archer.sayMyStrength();
         archer.sayMyAgility();
         archer.sayMyIntelligence();
-       
+       //Character healer = new Character(0,5,10,"Akasha");
     }
 }
