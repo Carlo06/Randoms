@@ -28,7 +28,7 @@ public class Character {
 
     }
 
-public Character(int strength, int agility, int intelligence, String name){
+//public Character(int strength, int agility, int intelligence, String name){
 
         strength = this.strength;
         agility = this.agility;
