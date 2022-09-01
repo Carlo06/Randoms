@@ -15,6 +15,19 @@ public class Weapon {
     public void showDamage(){
         System.out.println("damage "+ damage);
     }
+    
+    
+    // with constructor
+     //public Weapon(int dmg, float wgt, String Weapnname, String desc, String rty, Boolean elemdmg){
+       // damage = dmg;
+      //  Weight = wgt;
+      //  name = Weapnname;
+      //  description = desc;
+     //   rarity = rty;
+     //   hasElementalDamage = elemdmg;
+
+
+    }
 
 
 }
