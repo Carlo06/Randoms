@@ -78,5 +78,8 @@ public class App {
 
         // built in method
         // System.out.println("Hello World");
+        
+        //with constructor
+        // Weapon Sword = new Weapon(dmg, wgt, Weapnname, desc, rty, elemdmg);
     }
 }
