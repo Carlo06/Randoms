@@ -6,7 +6,8 @@ public class App {
              //BREAK
             if ( i == 2){
               System.out.println("Time out");
-              break;
+              // CONTINUE
+                continue;
           }
         }
             //DO WHILE
