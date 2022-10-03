@@ -1,13 +1,12 @@
 public class App {
     public static void main(String[] args) throws Exception {
             //For LOOP
-        for (int i = 5; i != 0; i--) {
+        for (int firstName = 5; firstName != 0; firstName--) {
             System.out.println("Jhon Carlo");
              //BREAK
-            if ( i == 2){
+            if ( firstName == 2){
               System.out.println("Time out");
-              // CONTINUE
-                continue;
+              break;
           }
         }
             //DO WHILE
@@ -19,10 +18,18 @@ public class App {
         
             // WHILE LOOP
         int nickName = 5;
-
         while (nickName !=0){
-            System.out.println("lo");
+            
             nickName--;
+            if (nickName ==3){
+                //CONTINUE
+                continue;}
+            
+            System.out.println("lo");
+            
+            
+            
+            }
         }
     }
-}
+
