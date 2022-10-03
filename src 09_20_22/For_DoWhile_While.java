@@ -21,8 +21,8 @@ public class App {
         while (nickName !=0){
             
             nickName--;
+            //CONTINUE
             if (nickName ==3){
-                //CONTINUE
                 continue;}
             
             System.out.println("lo");
