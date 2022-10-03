@@ -3,6 +3,11 @@ public class App {
             //For LOOP
         for (int i = 5; i != 0; i--) {
             System.out.println("Jhon Carlo");
+             //BREAK
+            if ( i == 2){
+              System.out.println("Time out");
+              break;
+          }
         }
             //DO WHILE
            int Surname = 5;  
