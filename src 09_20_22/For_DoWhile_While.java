@@ -17,7 +17,7 @@ public class App {
 
         while (nickName !=0){
             System.out.println("lo");
-            rideCount--;
+            nickName--;
         }
     }
 }
