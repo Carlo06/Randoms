@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class pizza {
+    public static void main(String[] args) {
+        
+        orderPizza();
+
+    }
+
+
+    static void orderPizza() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Welcome to Angels Pizza");
+
+        System.out.println("Enter your first order ");
+        String order1 =  scan.nextLine();
+        System.out.println("Your Order is " + order1);
+        
+
+        System.out.println("Enter Price");
+        int Price = scan.nextInt(); 
+        
+
+        System.out.println("Enter your Second order ");
+        
+        String order2 = scan.next();
+        System.out.println("Your order is " + order2);
+
+        
+        
+
+        System.out.println("Enter Price 2");
+        int Price2 = scan.nextInt();
+        scan.close();
+
+        
+        int z = Price + Price2;
+
+        
+
+
+
+        System.out.println("Your Total is " + Price + " + " + Price2 + "=" + z);
+        
+
+
+
+
+
+    }
+
+}
