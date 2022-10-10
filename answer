@@ -4,17 +4,26 @@ import javax.sound.midi.Soundbank;
 public class App {
     
     public static void main(String[] args) {
-       // studentNumber();
-
-        firstName();
-
-      // vowel();
-      // firstname_lastname();
-      //even_odd();
-
-     // Uppercase();
-     // firstname_uppercase();
-      //bsit();
+       // 1. 
+       studentNumber();
+       // 2.
+       even_odd();
+       // 3.
+       firstname_lastname();
+       // 4.
+       firstName();
+       // 5.
+       vowel();
+       // 6.
+       Uppercase();
+       // 7.
+       firstname_uppercase();
+       // 8.
+       bsit();
+       // 9.
+       strand();
+       // 10.
+       email();
     }
 
     // 1.
@@ -36,9 +45,7 @@ public class App {
             System.out.print("Enter the last two digits of your student number: ");
     
             int lastTwoDigits = scan.nextInt();
-    
-    
-    
+     
             if(lastTwoDigits % 2 == 0)
     
                 System.out.println(lastTwoDigits + " is even ");
@@ -121,7 +128,7 @@ public class App {
     static void Uppercase(){
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter Your Name: ");
+        System.out.println("Enter Your Student ID number: ");
         int studentNumber = scan.nextInt();
 
         if (studentNumber == 2022101184 ){
@@ -143,17 +150,14 @@ public class App {
         String lastname = scan.nextLine();
 
 
-        if ( firstname == firstname.toUpperCase()){
+        if ( firstname == firstname.toUpperCase() && lastname == lastname.toLowerCase()){
           
             System.out.println("Valid");    
         } else {
             System.out.println("Invalid");
         }
-        if (lastname == lastname.toLowerCase()){
-            System.out.println("Valid");    
-        } else {
-            System.out.println("Invalid");
-        }
+      
+
 
         }
 
@@ -192,7 +196,7 @@ public class App {
 
                 case "ML":
                 System.out.println("You are taking ML ");
-                break;
+                
             }
         
         }
@@ -236,12 +240,48 @@ public class App {
         }
     }  
 
-    // 10.
+    // 10.  
+    static void email(){
+        
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Input your email address: ");
+        String email = scan.nextLine();
+
+        if (email.contains("palatino") ){    
+            System.out.println("Valid");    
+        } else {
+            System.out.println("Invalid");
+        }
+
+        scan.close();
+    }
+
+   
+}
+    
+
+
+     
+        
+
+            
+
+          
+    
+
+
+
+
+
+    
+
+
 
 
 
    
-}
+
     
 
 
