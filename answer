@@ -1,0 +1,266 @@
+import java.util.Scanner;
+
+import javax.sound.midi.Soundbank;
+public class App {
+    
+    public static void main(String[] args) {
+       // studentNumber();
+
+        firstName();
+
+      // vowel();
+      // firstname_lastname();
+      //even_odd();
+
+     // Uppercase();
+     // firstname_uppercase();
+      //bsit();
+    }
+
+    // 1.
+    static void studentNumber(){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your ten digit student number: ");
+        int studentNumber = scan.nextInt();
+        
+        int last6digits = studentNumber%1000000;
+        System.out.println(" your last six digits: " + last6digits);
+        
+    }
+
+    // 2
+        static void even_odd(){
+            Scanner scan = new Scanner(System.in);
+            System.out.println("2. ODD or EVEN numbers");
+
+            System.out.print("Enter the last two digits of your student number: ");
+    
+            int lastTwoDigits = scan.nextInt();
+    
+    
+    
+            if(lastTwoDigits % 2 == 0)
+    
+                System.out.println(lastTwoDigits + " is even ");
+    
+            else
+    
+                System.out.println(lastTwoDigits +" is odd");
+    
+        }
+ 
+    // 3.
+
+     static void firstname_lastname(){
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter Your firstname : ");
+        String firstName = scan.nextLine();
+        System.out.println("Enter your Lastname");
+        String Lastname = scan.nextLine();
+
+        int total = firstName.length() + Lastname.length();
+
+        System.out.println(" Your firstname and lastname is " + total );
+       
+
+ 
+    }
+
+    // 4.
+    static void firstName(){
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Input the firstname in lower case: ");
+        String firstName = scan.next();
+        System.out.println("Input the firstname in UPPERCASE: ");
+        String FIRSTNAME = scan.next();
+
+        if ( firstName.equals("carlo") && FIRSTNAME.equals("CARLO") ){
+          
+            System.out.println("true");    
+        } else {
+            System.out.println("false");
+        }
+    }
+
+
+    // 5. 
+     
+    static void vowel(){
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Input one of the first letter of your name: ");
+        char choice = scan.next().charAt(0);
+        switch(choice){
+            case 'A':
+            System.out.print("true ");
+            break;
+        case 'E':
+            System.out.print("true ");
+            break;
+        case 'I':
+            System.out.print("true ");
+            break;
+        case 'O':
+            System.out.print("true ");
+            break;
+        case 'U':
+            System.out.print("true ");
+            break;
+        default:
+            System.out.print("false ");
+            break;
+        }
+    }  
+
+    // Part 2
+
+    // 6. 
+    static void Uppercase(){
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter Your Name: ");
+        int studentNumber = scan.nextInt();
+
+        if (studentNumber == 2022101184 ){
+          
+            System.out.println("Valid");    
+        } else {
+            System.out.println("Invalid");
+        }
+
+    }
+
+    // 7.
+    static void firstname_uppercase(){
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println(" Enter your firstName: ");
+        String firstname = scan.nextLine();
+        System.out.println(" Enter your lastName: ");
+        String lastname = scan.nextLine();
+
+
+        if ( firstname == firstname.toUpperCase()){
+          
+            System.out.println("Valid");    
+        } else {
+            System.out.println("Invalid");
+        }
+        if (lastname == lastname.toLowerCase()){
+            System.out.println("Valid");    
+        } else {
+            System.out.println("Invalid");
+        }
+
+        }
+
+        //8.
+
+        static void bsit(){
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Type BSIT if taking BSIT or Type BSCS if taking BSCS");
+            String choice = scan.next();
+
+            switch (choice){
+                case "BSIT":
+                System.out.println(" you picked BSIT");  
+                System.out.println(" Type MWA if you are taking MWA or Type MAA if you are taking MAA"); 
+                String Choice = scan.next();
+                switch (Choice){
+                    case "MWA":
+                    System.out.print("you are taking MWA ");
+                    break;
+    
+                    case "MAA":
+                    System.out.println("You are taking MAA");
+                    break;
+                    
+                }
+                break;
+
+                case "BSCS":
+                System.out.println(" you picked BSCS");  
+                System.out.println(" TYPE DF if you are taking DF or Type ML if you are taking ML");
+                String Choices = scan.next();
+                switch (Choices){
+                case "DF":
+                System.out.print("you are taking DF ");
+                break;
+
+                case "ML":
+                System.out.println("You are taking ML ");
+                break;
+            }
+        
+        }
+
+        
+    }
+    // 9.
+    static void strand(){
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Enter your SHS strand:  ");
+        String strand = scan.next();
+        switch(strand){
+            case "STEM":
+            System.out.print("valid ");
+            break;
+        case "ICT":
+            System.out.print("valid ");
+            break;
+        case "ABM":
+            System.out.print("valid ");
+            break;
+        case "HUMSS":
+            System.out.print("valid ");
+            break;
+        case "HOME ECONOMICS":
+            System.out.print("valid ");
+            break;
+
+        case "ARTS AND DESGIN":
+        System.out.print("valid ");
+        break;
+       
+        case "TVL MARITIME":
+            System.out.print("valid ");
+            break;
+
+        default:
+            System.out.print("invalid ");
+            break;
+        }
+    }  
+
+    // 10.
+
+
+
+   
+}
+    
+
+
+     
+        
+
+            
+
+          
+    
+
+
+
+
+
+    
+
+
+
+
+
+   
